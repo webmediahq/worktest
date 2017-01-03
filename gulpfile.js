@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	coffee = require('gulp-coffee'),
+	browserify = require('gulp-browserify'),
 	concat = require('gulp-concat');
 
 var coffeeSources = ['components/coffee/tagline.coffee']; 
