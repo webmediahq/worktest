@@ -30,16 +30,16 @@ var rclick = function() {
             myElement.style.left = f.offsetX + 90 + 'px';
             myElement.style.top = f.offsetY + -90 + 'px';
           });    
-        } // make sure I dont' have one opened
+        } // make sure I dont have one opened
       } // check to see that I clicked on IMG only
     }, false); // click event
   }
-}(); //anonymous closure
-var pixgrid = function() {
+}(); //anonymous closure  
+var pixgrid = function() { 
     function centerImage(theImage) {
         var myDifX = (window.innerWidth - theImage.width) / 2, myDifY = (window.innerHeight - theImage.height) / 2;
         return theImage.style.top = myDifY + "px", theImage.style.left = myDifX + "px", 
-        theImage;
+        theImage; 
     }
     var myNodes = document.querySelectorAll(".pixgrid");
     for (var i=0; i<myNodes.length; i++) {
@@ -68,8 +68,8 @@ var pixgrid = function() {
                     centerImage(largeImage));
                 }, !1);
             }
-        }, !1);
-    }
+        }, !1); 
+    } 
 }();
 var $, fill;
 
